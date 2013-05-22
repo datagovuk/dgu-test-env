@@ -1,0 +1,48 @@
+
+# Unified dependancy list for Vagrant
+# Sources:
+#     /vagrant/src/ckan/requires/lucid_conflict.txt
+#     /vagrant/src/ckan/requires/lucid_present.txt
+#     /vagrant/src/ckan/requires/lucid_missing.txt
+#     /vagrant/src/ckanext-spatial/pip-requirements.txt
+#     /vagrant/src/ckanext-harvest/pip-requirements.txt
+# With a little bit of tidying, deduplication, and conflict resolution.
+
+-e git+https://github.com/okfn/vdm.git@vdm-0.11#egg=vdm
+-e git+https://github.com/wwaites/autoneg.git@b4c727b164f411cc9d60#egg=autoneg
+-e hg+http://hg.saddi.com/flup@301a58656bfb#egg=flup
+-e svn+https://software.sandia.gov/svn/public/pyutilib/pyutilib.component.core/trunk@1972#egg=pyutilib.component.core
+ConcurrentLogHandler==0.8.4
+Genshi==0.6
+GeoAlchemy>=0.6
+Pylons==0.9.7
+Shapely>=1.2.13
+WebOb==1.0.8
+WebTest==1.2
+apachemiddleware==0.1.1
+argparse
+babel==0.9.4
+carrot==0.10.1
+ckanclient>=0.7
+formalchemy==1.4.1
+lxml==2.2.4
+ofs==0.4.1
+owslib
+pairtree==0.7.1-T
+psycopg2==2.4.2
+repoze.who-friendlyform==1.0.8
+repoze.who.plugins.openid==0.5.3
+repoze.who==1.0.19
+routes==1.11
+solrpy==0.9.4
+sqlalchemy-migrate==0.7.1
+tempita==0.4
+webhelpers==1.2
+zope.interface==3.5.3
+Beaker==1.6.3
+FormEncode==1.2.4
+simplejson==2.6.2
+decorator==3.3.2
+sqlalchemy==0.7.3
+markupsafe==0.9.2
+python-dateutil==1.5.0
