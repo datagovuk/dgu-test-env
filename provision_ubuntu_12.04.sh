@@ -118,7 +118,7 @@ sudo chgrp $GROUP /var/log/solr
 sudo chmod g+w /var/log/solr
 if [ ! -e /usr/local/solr ]
 then
-  cp /vagrant/apache-solr-3.3.0.tgz .
+  wget http://archive.apache.org/dist/lucene/solr/3.3.0/apache-solr-3.3.0.tgz
   tar -vxzf apache-solr-3.3.0.tgz
   sudo mv apache-solr-3.3.0 /usr/local/solr
   sudo mv /usr/local/solr/example/solr/conf/schema.xml{,.orig}
