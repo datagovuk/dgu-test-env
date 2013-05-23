@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-USER=vagrant
-GROUP=vagrant
+USER=`whoami`
 # You know, I think it actually has to be in this place :-/
 CKAN_INI=/vagrant/src/ckan/development.ini
 
@@ -114,7 +113,7 @@ sudo chgrp -R www-data /var/log/ckan
 
 # Apache Solr
 sudo mkdir -p /var/log/solr
-sudo chgrp $GROUP /var/log/solr
+sudo chgrp $USER /var/log/solr
 sudo chmod g+w /var/log/solr
 if [ ! -e /usr/local/solr ]
 then
