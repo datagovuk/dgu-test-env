@@ -29,12 +29,12 @@ git checkout release-v1.7.1-dgu
 cd $TEST_ROOT
 
 git clone git@github.com:datagovuk/ckanext-archiver pyenv/src/ckanext-archiver
-cd ckanext-archiver
+cd pyenv/src/ckanext-archiver
 git checkout master
 cd $TEST_ROOT
 
 git clone git@github.com:datagovuk/ckanext-datapreview pyenv/src/ckanext-datapreview
-cd ckanext-datapreview
+cd pyenv/src/ckanext-datapreview
 git pyenv/src/checkout master
 cd $TEST_ROOT
 
