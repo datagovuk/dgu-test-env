@@ -124,7 +124,7 @@ pip install Paste==1.7.2
 pip install PasteDeploy==1.5.0
 pip install PasteScript==1.7.5
 # CKAN Python dependancies
-pip install -r dgu-test-env/pip-dependancies.txt
+pip install -r pip-dependancies.txt
 
 #dgu-test-env/scripts/install_ckan_ini.sh $CKAN_INI
 
