@@ -23,52 +23,52 @@ then
 fi
 source pyenv/bin/activate
 
-git clone git@github.com:datagovuk/ckan pyenv/src/ckan
+[ -d pyenv/src/ckan ] || git clone git@github.com:datagovuk/ckan pyenv/src/ckan
 cd pyenv/src/ckan
 git checkout release-v1.7.1-dgu
 cd $TEST_ROOT
 
-git clone git@github.com:datagovuk/ckanext-archiver pyenv/src/ckanext-archiver
+[ -d pyenv/src/ckanext-archiver ] ||  git clone git@github.com:datagovuk/ckanext-archiver pyenv/src/ckanext-archiver
 cd pyenv/src/ckanext-archiver
 git checkout master
 cd $TEST_ROOT
 
-git clone git@github.com:datagovuk/ckanext-datapreview pyenv/src/ckanext-datapreview
+[ -d pyenv/src/ckanext-datapreview] || git clone git@github.com:datagovuk/ckanext-datapreview pyenv/src/ckanext-datapreview
 cd pyenv/src/ckanext-datapreview
 git pyenv/src/checkout master
 cd $TEST_ROOT
 
-git clone git@github.com:datagovuk/ckanext-dgu pyenv/src/ckanext-dgu
+[ -d pyenv/src/ckanext-dgu ] || git clone git@github.com:datagovuk/ckanext-dgu pyenv/src/ckanext-dgu
 cd pyenv/src/ckanext-dgu
 git checkout master
 cd $TEST_ROOT
 
-git clone git@github.com:datagovuk/ckanext-ga-report pyenv/src/ckanext-ga-report
+[ -d pyenv/src/ckanext-ga-report ] || git clone git@github.com:datagovuk/ckanext-ga-report pyenv/src/ckanext-ga-report
 cd pyenv/src/ckanext-ga-report
 git checkout master
 cd $TEST_ROOT
 
-git clone git@github.com:datagovuk/ckanext-harvest pyenv/src/ckanext-harvest
+[ -d pyenv/src/ckanext-harvest ] || git clone git@github.com:datagovuk/ckanext-harvest pyenv/src/ckanext-harvest
 cd pyenv/src/ckanext-harvest
 git checkout dgu
 cd $TEST_ROOT
 
-git clone git@github.com:datagovuk/ckanext-os pyenv/src/ckanext-os
+[ -d pyenv/src/ckanext-os ] || git clone git@github.com:datagovuk/ckanext-os pyenv/src/ckanext-os
 cd pyenv/src/ckanext-os
 git checkout master
 cd $TEST_ROOT
 
-git clone git@github.com:datagovuk/ckanext-qa pyenv/src/ckanext-qa
+[ -d pyenv/src/ckanext-qa ] || git clone git@github.com:datagovuk/ckanext-qa pyenv/src/ckanext-qa
 cd pyenv/src/ckanext-qa
 git checkout temp_working
 cd $TEST_ROOT
 
-git clone git@github.com:okfn/ckanext-social pyenv/src/ckanext-social
+[ -d pyenv/src/ckanext-social ] || git clone git@github.com:okfn/ckanext-social pyenv/src/ckanext-social
 cd pyenv/src/ckanext-social
 git checkout master
 cd $TEST_ROOT
 
-git clone git@github.com:datagovuk/ckanext-spatial pyenv/src/ckanext-spatial
+[ -d pyenv/src/ckanext-spatial ] || git clone git@github.com:datagovuk/ckanext-spatial pyenv/src/ckanext-spatial
 cd pyenv/src/ckanext-spatial
 git checkout dgu
 cd $TEST_ROOT
