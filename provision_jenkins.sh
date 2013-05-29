@@ -5,12 +5,12 @@ if [ ! $WORKSPACE ] ; then
   WORKSPACE = `pwd`
 fi
 
-echo "Moving to $TEST_ROOT"
-cd $TEST_ROOT
-
 TEST_ROOT=$WORKSPACE
 USER="ckantest"
 CKAN_INI="pyenv/src/ckan/development.ini"
+
+echo "Moving to $TEST_ROOT"
+cd $TEST_ROOT
 
 set -e 
 set -x
@@ -21,7 +21,9 @@ then
   virtualenv --no-site-packages pyenv
   mkdir -p pyenv/src
 fi
-source pyenv/bin/activate
+
+. pyenv/bin/activate
+echo `which python`
 
 [ -d pyenv/src/ckan ] || git clone git@github.com:datagovuk/ckan pyenv/src/ckan
 cd pyenv/src/ckan
