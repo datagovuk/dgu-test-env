@@ -74,6 +74,17 @@ cd pyenv/src/ckanext-spatial
 git checkout dgu
 cd $TEST_ROOT
 
+[ -d pyenv/src/ckanext-importlib ] || git clone git@github.com:okfn/ckanext-importlib pyenv/src/ckanext-importlib
+cd pyenv/src/ckanext-importlib
+git checkout master
+cd $TEST_ROOT
+
+[ -d pyenv/src/datautildate ] || git clone https://github.com/okfn/datautildate.git pyenv/src/datautildate
+cd pyenv/src/datautildate
+git checkout master
+cd $TEST_ROOT
+
+
 # CKAN codebase
 pip install -e pyenv/src/ckan
 pip install -e pyenv/src/ckanext-dgu
@@ -85,13 +96,14 @@ pip install -e pyenv/src/ckanext-archiver
 pip install -e pyenv/src/ckanext-social
 pip install -e pyenv/src/ckanext-ga-report
 pip install -e pyenv/src/ckanext-datapreview
+pip install -e pyenv/src/ckanext-importlib
 
 # Paster is broken and needs to be installed in this order
 pip install Paste==1.7.2
 pip install PasteDeploy==1.5.0
 pip install PasteScript==1.7.5
 # CKAN Python dependancies
-pip install -r pip-dependancies.txt
+pip install -r pip-dependencies.txt
 
 cp ckan.ini.source pyenv/src/ckan/development.ini 
 
