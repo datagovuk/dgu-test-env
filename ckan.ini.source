@@ -154,11 +154,11 @@ ckan.favicon = /images/icons/ckan.ico
 ckan.gravatar_default = identicon
 
 ## Solr support
-solr_url = http://127.0.0.1:8983/solr
+solr_url = http://127.0.0.1:8983/solr/test.ckan.net
 
 ## An 'id' for the site (using, for example, when creating entries in a common search index)
 ## If not specified derived from the site_url
-ckan.site_id = ckantest
+# ckan.site_id = ckantest
 
 ## API url to use (e.g. in AJAX callbacks)
 ## Enable if the API is at a different domain
