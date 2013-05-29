@@ -158,7 +158,7 @@ solr_url = http://127.0.0.1:8983/solr
 
 ## An 'id' for the site (using, for example, when creating entries in a common search index)
 ## If not specified derived from the site_url
-# ckan.site_id = ckan.net
+ckan.site_id = ckantest
 
 ## API url to use (e.g. in AJAX callbacks)
 ## Enable if the API is at a different domain

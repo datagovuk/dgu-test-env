@@ -97,6 +97,7 @@ pip install -e pyenv/src/ckanext-social
 pip install -e pyenv/src/ckanext-ga-report
 pip install -e pyenv/src/ckanext-datapreview
 pip install -e pyenv/src/ckanext-importlib
+pip install -e pyenv/src/datautildate
 
 # Paster is broken and needs to be installed in this order
 pip install Paste==1.7.2
