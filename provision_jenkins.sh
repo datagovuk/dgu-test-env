@@ -33,7 +33,7 @@ cd pyenv/src/ckanext-archiver
 git checkout master
 cd $TEST_ROOT
 
-[ -d pyenv/src/ckanext-datapreview] || git clone git@github.com:datagovuk/ckanext-datapreview pyenv/src/ckanext-datapreview
+[ -d pyenv/src/ckanext-datapreview ] || git clone git@github.com:datagovuk/ckanext-datapreview pyenv/src/ckanext-datapreview
 cd pyenv/src/ckanext-datapreview
 git checkout master
 cd $TEST_ROOT
