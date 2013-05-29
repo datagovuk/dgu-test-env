@@ -1,10 +1,16 @@
 #!/usr/bin/env bash
 
-TEST_ROOT = `pwd`
+if [ ! $WORKSPACE ] ; then
+  echo "No workspace configured, using pwd"
+  WORKSPACE = `pwd`
+fi
+
+echo "Moving to $TEST_ROOT"
+cd $TEST_ROOT
+
+TEST_ROOT=$WORKSPACE
 USER="ckantest"
 CKAN_INI="pyenv/src/ckan/development.ini"
-
-cd $TEST_ROOT
 
 set -e 
 set -x
