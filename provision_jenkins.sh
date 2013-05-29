@@ -23,7 +23,6 @@ then
 fi
 
 . pyenv/bin/activate
-echo `which python`
 
 [ -d pyenv/src/ckan ] || git clone git@github.com:datagovuk/ckan pyenv/src/ckan
 cd pyenv/src/ckan
@@ -94,4 +93,7 @@ pip install PasteScript==1.7.5
 # CKAN Python dependancies
 pip install -r pip-dependancies.txt
 
-#dgu-test-env/scripts/install_ckan_ini.sh $CKAN_INI
+cp ckan.ini.source pyenv/src/ckan/development.ini 
+
+cd pyenv/src/ckanext-dgu
+nosetests --with-pylons=test-core.ini ckanext/dgu/tests/
