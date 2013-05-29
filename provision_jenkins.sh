@@ -35,7 +35,7 @@ cd $TEST_ROOT
 
 [ -d pyenv/src/ckanext-datapreview] || git clone git@github.com:datagovuk/ckanext-datapreview pyenv/src/ckanext-datapreview
 cd pyenv/src/ckanext-datapreview
-git pyenv/src/checkout master
+git checkout master
 cd $TEST_ROOT
 
 [ -d pyenv/src/ckanext-dgu ] || git clone git@github.com:datagovuk/ckanext-dgu pyenv/src/ckanext-dgu
